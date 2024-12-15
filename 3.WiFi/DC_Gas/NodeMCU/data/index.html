@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <h2>Giá trị cảm biến khí GAS: <span id="sensorValue"></span></h2>
+    <h2>Điều khiển động cơ DC</h2>
+    
+    <table border="1">
+        <tr>
+            <th>Tốc độ</th>
+            <th>Chiều</th>
+        </tr>
+        <tr>
+            <td>
+                <label for="faster"><input type="radio" name="speed_mode" id="faster" checked>Nhanh dần</label>
+                <br>
+                <label for="slower"><input type="radio" name="speed_mode" id="slower">Chậm dần</label>
+            </td>
+            <td>
+                <label for="CW"><input type="radio" name="dir" id="CW" checked>Thuận chiều</label>
+                <br>
+                <label for="CCW"><input type="radio" name="dir" id="CCW">Ngược chiều</label>
+            </td>
+        </tr>
+    </table>
+    <button onclick="controlDC()">Quay</button>
+    <script src="script.js"></script>
+</body>
+
+</html>
